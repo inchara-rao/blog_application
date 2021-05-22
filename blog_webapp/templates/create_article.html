@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/logout">logout</a><br>
+ <form action="create_article", method="post",enctype="multipart/form-data">
+     {% csrf_token %}
+     <input type="text" name="description" placeholder="description"><br>
+     <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg" /><br><br>
+     <input type="checkbox" name="private"> private<br>
+     <input type="submit" >
+ </form>
+
+</body>
+</html>
