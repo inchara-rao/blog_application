@@ -22,5 +22,7 @@ urlpatterns = [
     path('',include('blog_web.urls')),
     path('admin/', admin.site.urls),
 ]
+urlpatterns += [path('captcha/', include('captcha.urls')),]
+
 if settings.DEBUG:
     urlpatterns=urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

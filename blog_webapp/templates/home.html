@@ -5,9 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-Hello!
+WELCOME!<br><br>
 {% if user.is_authenticated %}
-hello {{user.username}}!
+<h2>Hello {{user.username}}!</h2>
     <a href="/logout">logout</a><br>
 {% else %}
     <a href="/register">register here</a><br>

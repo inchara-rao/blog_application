@@ -5,13 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/logout">logout</a><br>
+<br>
+<a href="/logout">logout</a>
+<br><br>
  <form action="create_article", method="post",enctype="multipart/form-data">
      {% csrf_token %}
-     <input type="text" name="description" placeholder="description"><br>
-     <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg" /><br><br>
-     <input type="checkbox" name="private"> private<br>
+     Write your article<input type="text" name="description" placeholder="description"><br>
+     Choose the file<input type="file" name="image" accept="image/x-png,image/gif,image/jpeg" /><br>
+     Check if private<input type="checkbox" name="private"><br>
      <input type="submit" >
+ </form>
  </form>
 
 </body>
